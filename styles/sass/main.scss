@@ -8,12 +8,12 @@ body {
 }
 .l-card {
   display: flex;
-  margin: 20px;
-  padding: 10px;
+  margin: 10px;
+  padding: 5px;
   color: black;
   justify-content: flex-end;
   align-items: center;
-  font-size: 15px;
+  font-size: 18px;
   gap: 50px;
   &__c-card {
     &--left {
@@ -32,7 +32,7 @@ body {
     &--right::after {
       content: "";
       width: 3px;
-      height: 180%;
+      height: 140%;
       position: absolute;
       top: 0;
       left: 0;
