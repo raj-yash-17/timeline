@@ -72,7 +72,14 @@ body {
 @media screen and (max-width:768px){
   .l-card{
     font-size: 10px;
+    &__c-card{
+      &--right{
+        padding: 15px;
+        height: 42px;
+      }
+    }
   }
+
   .text{
     &__data{
       font-size: 8px;

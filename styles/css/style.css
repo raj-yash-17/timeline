@@ -71,6 +71,10 @@ body {
   .l-card {
     font-size: 10px;
   }
+  .l-card__c-card--right {
+    padding: 15px;
+    height: 42px;
+  }
   .text__data {
     font-size: 8px;
   }
