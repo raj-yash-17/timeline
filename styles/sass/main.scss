@@ -9,18 +9,21 @@ body {
 .l-card {
   display: flex;
   margin: 10px;
-  padding: 5px;
   color: black;
-  justify-content: flex-end;
   align-items: center;
   font-size: 18px;
-  gap: 50px;
+  justify-content: center;
   &__c-card {
     &--left {
-      margin-right: auto;
+      padding: 20px;
+      background-color: rgb(249, 255, 168);
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-align: end;
+      margin-left: auto;
+      width: 50%;
+      height:35px;
     }
     &--right {
       padding: 20px;
@@ -28,11 +31,13 @@ body {
       width: 50%;
       position: relative;
       font-weight: bold;
+      background-color: rgb(225, 250, 215);
+      height:35px;
     }
     &--right::after {
       content: "";
       width: 3px;
-      height: 140%;
+      height: 155%;
       position: absolute;
       top: 0;
       left: 0;
@@ -41,13 +46,14 @@ body {
     }
     &--right::before {
       content: "";
+      margin: 2px;
       width: 25px;
       height: 25px;
       border-radius: 50%;
       position: absolute;
       left: 0;
       background: green;
-      transform: translateX(-50%);
+      transform: translateX(-60%);
       z-index: 1;
     }
   }
@@ -56,7 +62,20 @@ body {
   &__date {
     font-weight: 800;
   }
+  &__data{
+    font-size: 15px;
+  }
   &__info {
     font-weight: 800;
+  }
+}
+@media screen and (max-width:768px){
+  .l-card{
+    font-size: 10px;
+  }
+  .text{
+    &__data{
+      font-size: 8px;
+    }
   }
 }
